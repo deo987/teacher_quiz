@@ -1,0 +1,137 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main container styling */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Navbar styling */
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    padding: 10px 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+  }
+  
+  /* Heading styling */
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Form styling */
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    width: auto;
+    background-color: #28a745;
+    color: white;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  /* Flexbox utility classes */
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  /* Card style for each question or item */
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for lists */
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    margin: 5px 0;
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    .flex {
+      flex-direction: column;
+    }
+  }
+  
